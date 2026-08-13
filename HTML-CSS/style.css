@@ -1,4 +1,9 @@
+/*------全体------*/
+*{
+    box-sizing: border-box;
+}
 body{
+    margin: 0;
     background-color: #f5f5f5;
 }
 header{
@@ -10,12 +15,13 @@ footer{
     text-align: center;
 }
 section{
-    width: 500px;
+    width: 900px;
     padding: 50px;
     margin: 50px;
     border: 5px solid red;
 }
 
+/*------見出し------*/
 h1{
     color:white;
     font-size: 40px;
@@ -26,8 +32,56 @@ h2{
     color: #333333;
     font-size: 28px;
 }
+
+/*------文章------*/
 p{
     color: #555555;
     font-size: 18px;
 }
 
+/*------ボタン------*/
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #555;
+}
+
+/*------作品一覧------*/
+.works{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/*------カード------*/
+.card{
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/*------スマホ------*/
+@media(max-width: 600px){
+    section{
+        width: auto;
+        padding: 20px;
+        margin: 20px;
+    }
+    .works{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card{
+        width: auto;
+    }
+}
