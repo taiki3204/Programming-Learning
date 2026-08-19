@@ -1,10 +1,13 @@
 const name = "Taiki";
-let age = 25;
-console.log(name);
-console.log(age);
-console.log("My name is " + name);
-age = 26;
-console.log(age);
+const age = 25;
+const favoriteFood = "Sushi";
+const score = 100;
+const isStudent = false;
 
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof favoriteFood);
+console.log(typeof score);
+console.log(typeof isStudent);
 
 
