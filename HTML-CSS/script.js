@@ -1,78 +1,41 @@
-const name = "Taiki";
-const age = 25;
-const favoriteFood = "Sushi";
-const score = 82;
-const isStudent = false;
-const day = "Sunday";
-const isLoggedIn = false;
-const price = 1200;
-const quantity = 3;
+//STEP9
+const hobbies = ["Game", "Bike", "Programming"];
 
+console.log(hobbies[0]);
+console.log(hobbies[1]);
+console.log(hobbies[2]);
 
-//STEP6
-if (score >=80) {
-    console.log("合格");
-} else {
-    console.log("不合格");
+console.log(hobbies.length);
+
+for (let i = 0; i < hobbies.length; i++) {
+    console.log(hobbies[i]);
+}
+
+const foods = ["Sushi","Ramen","Curry","Yakiniku"];
+
+for(let i=0;i<foods.length;i++){
+    console.log("My favorite food is "+foods[i]+" !");
 }
 
 
-
-if (age >= 20 && age < 30) {
-    console.log("20代です");
-}
-
-
-if (day === "Saturday" || day === "Sunday") {
-    console.log("休日です");
-}
-
-
-if (!isLoggedIn) {
-    console.log("ログインしてください");
-}
-
-if(score>=60 && score<90){
-    console.log("Clear")
-}
-
-//STEP7
-for (let i = 1; i <= 10; i++) {
-    console.log(i);
-}
-
-for (let i = 1; i <= 10; i++) {
-
-    if (i % 2 === 0) {
-        console.log(i);
+//STEP10
+const users = [
+    {
+        name: "Taiki",
+        age: 25
+    },
+    {
+        name: "Taro",
+        age: 30
+    },
+    {
+        name: "Hanako",
+        age: 22
     }
-
-}
-for(let i=1;i<=20;i++){
-    if(i%3===0){
-        console.log(i);
-    }
+];
+function introduce(user) {
+    console.log("名前：" + user.name);
+    console.log("年齢：" + user.age);
 }
 
-//STEP8
-function sayHello() {
-    console.log("Hello!");
-}
-sayHello();
-
-
-function greet(name) {
-    console.log("Hello, " + name + "!");
-}
-greet("Taiki");
-greet("Taro");
-
-
-function add(a,b) {
-    return a+b;
-}
-const result = add(10, 20);
-console.log(result);
-
-
-
+introduce(users[0]);
